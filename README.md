@@ -1,2 +1,2 @@
 # responsive_website
-Mobile responsive mock page
+This is a mock page based on a project that needs some updates. 

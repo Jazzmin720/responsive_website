@@ -1,0 +1,220 @@
+body{
+    background-color:beige;
+}
+
+/*logo and nav bar*/
+.logo{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+#the-boxs{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    border:3px inset teal;
+}
+
+
+
+.nav-bar ul{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bold;
+}
+
+a{
+    text-decoration: none;
+    color:#6b6b6b;
+}
+a:hover{
+    background-color: gray;
+}
+/*about us*/
+
+
+.about-us{
+    text-align: center;
+    color: #6b6b6b;
+    }
+.about-us h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-bottom: 2%;
+}
+.about-us p{
+    margin-top: 0%;
+}
+/*cards container*/
+.cards{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    text-align:center;
+    grid-gap:10px;
+   
+}
+/*card images*/
+.card-1{
+   background-image: url("http://athleticmuscle.net/wp-content/uploads/2020/10/CrossFit-home-gym-equipment-1.jpg");
+   background-size:100%;
+   background-repeat: no-repeat;
+   background-position: center;
+    
+
+}
+
+.card-2{
+    background-image: url("https://www.allrec.com/Portals/0/images/elevate-fitness-course.jpg?ver=mMKxh6__8we8F93d70aNqw%3D%3D");
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.card-3{
+   background-image:url("https://www.surgetonewlevels.net/uploads/2/9/7/3/29731455/122066666-10224427373981284-7519431123691092914-n.jpg");
+   background-size:100%;
+   background-repeat:no-repeat;
+   background-position: center;
+}
+/*card*/
+
+.card-1-text{
+text-align: center;
+color:#6b6b6b;
+}
+.card-2-text{
+    text-align: center;
+    color:#6b6b6b;
+}
+.card-3-text{
+    text-align: center;
+    color:#6b6b6b;
+}
+
+
+
+
+
+/*our team*/
+.team-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#shego, #hego, #mego ,#igo{
+    width:150px;
+    height:150px;
+    
+}
+.our-team h2, .our-team p{
+    text-align: center;
+    color:#6b6b6b;
+}
+
+/*social media icons*/
+#facebook,#google,#twitter,#instagram,#linkedin{
+    width:20px;
+    height:20px;
+    opacity:80%;
+    border-radius:50%;
+    margin-top:20px;
+}
+
+
+
+
+
+/*footer*/
+
+footer{
+    background-color:#3b3c36 ;
+      
+}
+.company-social-media{
+    grid-area:company-social-media;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin:20px;
+    flex-wrap: wrap;
+    
+    
+}
+address{
+    grid-area:address;
+}
+email{
+    grid-area:email;
+}
+phone{
+    grid-area:phone;
+}
+
+.contact-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:50px;
+    color:#6b6b6b;
+   
+}
+/*media queries*/
+@media (min-width 320px){
+    
+    .cards{
+        display:flex;
+        flex-direction: column ;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align:center;
+       
+    }
+    .nav-bar ul{
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight:bold;
+    }
+    
+
+    }
+
+
+@media(max-width:480px){
+    .cards{
+        display:flex;
+        flex-direction: column ;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align:center;
+        
+       
+    }
+    .nav-bar ul{
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight:bold;
+    }
+}
+@media(min-width:481px){
+    .cards{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        text-align:center;
+        grid-gap:10px;
+    }
+
+}
