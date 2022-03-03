@@ -153,10 +153,10 @@ footer{
 address{
     grid-area:address;
 }
-email{
+.email{
     grid-area:email;
 }
-phone{
+.phone{
     grid-area:phone;
 }
 
@@ -170,7 +170,7 @@ phone{
    
 }
 /*media queries*/
-@media (min-width 320px){
+@media (min-width: 320px){
     
     .cards{
         display:flex;
@@ -220,6 +220,14 @@ phone{
         justify-content: center;
         text-align:center;
         grid-gap:10px;
+    }
+    .nav-bar ul{
+        list-style: none;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight:bold;
     }
 
 }
