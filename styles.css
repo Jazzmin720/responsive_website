@@ -63,6 +63,7 @@ a:hover{
    background-size:100%;
    background-repeat: no-repeat;
    background-position: center;
+   height:250px;
     
 
 }
@@ -72,12 +73,15 @@ a:hover{
     background-size:100%;
     background-repeat:no-repeat;
     background-position: center;
+    height:250px;
 }
 .card-3{
    background-image:url("https://www.surgetonewlevels.net/uploads/2/9/7/3/29731455/122066666-10224427373981284-7519431123691092914-n.jpg");
    background-size:100%;
    background-repeat:no-repeat;
    background-position: center;
+   height:250px;
+
 }
 /*card*/
 
