@@ -55,6 +55,7 @@ a:hover{
     justify-content: center;
     text-align:center;
     grid-gap:10px;
+    max-width:1300px;
    
 }
 /*card images*/
