@@ -32,9 +32,17 @@ a:hover{
     background-color: gray;
 }
 /*about us*/
+.logo{
+    margin:auto;
+    width:100vw;
+}
+.logo-image{
+    margin-left:100px;;
+}
 .about-us{
     text-align: center;
     color: #6b6b6b;
+    margin:auto;
     }
 .about-us h2{
     font-family:Arial, Helvetica, sans-serif;
@@ -52,12 +60,12 @@ a:hover{
 /*cards container*/
 .cards{
     display:grid;
-    grid-template-columns: repeat(3, 150px);
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     text-align:center;
     grid-column-gap:30px;
     width:600px;
-    height:700px;
+    height:1000px;
     margin:auto;
 }
 /*card images*/
@@ -66,6 +74,9 @@ a:hover{
     height:250px;
 }
 /*cards*/
+.cards{
+    margin-top:100px;
+}
 .card-1,.card-2,.card-3{
     text-align: center;
     color:#6b6b6b;
@@ -73,10 +84,16 @@ a:hover{
     box-shadow: 0px 4px 4px 4px rgba(218, 223, 225, 0.8);
     border-radius:10px;
     width:300px;
-    height:400px;
+    height:600px;
     justify-self: center;
+    font-size:20px;
 }
 /*our team*/
+.our-team{
+    width:1000px;
+    height:800px;
+    margin:auto;
+}
 .team-container{
     display:flex;
     flex-direction:row;
@@ -84,7 +101,6 @@ a:hover{
     flex-wrap: wrap;
     margin-top:75px;
 }
-
 #shego, #hego, #mego ,#igo{
     width:150px;
     height:150px;
@@ -101,6 +117,7 @@ a:hover{
     opacity:80%;
     border-radius:50%;
     margin-top:20px;
+    margin-left:20px;
 }
 /*footer*/
 
@@ -114,6 +131,7 @@ footer{
     justify-content: center;
     margin:20px;
     flex-wrap: wrap;
+    padding-left:50px;
 }
 address{
     grid-area:address;
@@ -133,64 +151,9 @@ address{
     color:#6b6b6b;
 }
 /*media queries*/
-@media (min-width: 320px){
-    
-    .cards{
-        display:flex;
-        flex-direction: column ;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align:center;
-       
-    }
-    .nav-bar ul{
-        list-style: none;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight:bold;
-    }
-    
-
-    }
 
 
-@media(max-width:480px){
-    .cards{
-        display:flex;
-        flex-direction: column ;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align:center;
-        
-       
-    }
-    .nav-bar ul{
-        list-style: none;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight:bold;
-    }
-}
-@media(min-width:481px){
-    .cards{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-content: center;
-        text-align:center;
-        grid-gap:10px;
-    }
-    .nav-bar ul{
-        list-style: none;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-around;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight:bold;
-    }
 
-}
+
+
+
