@@ -37,7 +37,7 @@ a:hover{
     width:100vw;
 }
 .logo-image{
-    margin-left:100px;;
+    margin-left:6.25rem;
 }
 .about-us{
     text-align: center;
@@ -151,7 +151,64 @@ address{
     color:#6b6b6b;
 }
 /*media queries*/
-
+@media(max-width:480px){
+    .nav-bar ul{
+        
+        flex-direction: row;
+        flex-wrap:wrap;
+       
+    }
+    .container{
+        width:100vw;
+    }
+    .about-us{
+        text-align: center;
+        color: #6b6b6b;
+        margin:auto;
+        }
+    .about-us h2{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 1.25rem;
+        margin-bottom: 2%;
+    }
+    .about-us p{
+        margin-top: 0%;
+        width:100vw;
+        height:0.875rem
+        text-align:center;
+        font-size:0.875rem
+        margin:auto;
+    }
+    .cards{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        text-align:center;
+        width:37.5rem;
+        height:62.5rem;
+        margin-top:1000px;
+    }
+    /*card images*/
+    #indoorBox,#outdoorBox,#powerlifting{
+        width:15.625rem;
+        height:15.625rem;
+    }
+    /*cards*/
+    .cards{
+        margin-top:37.5rem;
+    }
+    .card-1,.card-2,.card-3{
+        text-align: center;
+        color:#6b6b6b;
+        padding:20px;
+        box-shadow: 0px 4px 4px 4px rgba(218, 223, 225, 0.8);
+        border-radius:10px;
+        width:18.75rem;
+        height:37.5rem;
+        justify-self: center;
+        font-size:1.25rem;
+    }
+}
 
 
 
