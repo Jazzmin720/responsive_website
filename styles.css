@@ -208,6 +208,32 @@ address{
         justify-self: center;
         font-size:1.25rem;
     }
+    .our-team{
+        width:62.5rem;
+        height:50rem;
+        margin-top:500px;
+        margin-left:0;
+        text-align:left;
+        padding:0;
+    }
+    .our-team h2, .our-team p{
+        text-align: left;
+    }
+    
+    .team-container{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        margin-top:1000px;
+        
+        
+    }
+    #shego, #hego, #mego ,#igo{
+        width:9.375rem
+        height:9.375rem
+        
+    }
+    
 }
 
 
