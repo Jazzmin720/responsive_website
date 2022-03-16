@@ -1,11 +1,13 @@
 body{
     background-color:beige;
 }
-
 /*logo and nav bar*/
 .logo{
     display:grid;
     grid-template-columns: 1fr 1fr;
+    width:100vw;
+    height:100px;
+    margin:auto;
 }
 #the-boxs{
     width:80px;
@@ -13,9 +15,6 @@ body{
     border-radius:50%;
     border:3px inset teal;
 }
-
-
-
 .nav-bar ul{
     list-style: none;
     display:flex;
@@ -33,8 +32,6 @@ a:hover{
     background-color: gray;
 }
 /*about us*/
-
-
 .about-us{
     text-align: center;
     color: #6b6b6b;
@@ -46,69 +43,46 @@ a:hover{
 }
 .about-us p{
     margin-top: 0%;
+    width:1000px;
+    height:200px;
+    text-align:center;
+    margin:auto;
+    font-size:20px;
 }
 /*cards container*/
 .cards{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 150px);
     justify-content: center;
     text-align:center;
-    grid-gap:10px;
-    max-width:1300px;
-   
+    grid-column-gap:30px;
+    width:600px;
+    height:700px;
+    margin:auto;
 }
 /*card images*/
-.card-1{
-   background-image: url("http://athleticmuscle.net/wp-content/uploads/2020/10/CrossFit-home-gym-equipment-1.jpg");
-   background-size:100%;
-   background-repeat: no-repeat;
-   background-position: center;
-   height:250px;
-    
-
-}
-
-.card-2{
-    background-image: url("https://www.allrec.com/Portals/0/images/elevate-fitness-course.jpg?ver=mMKxh6__8we8F93d70aNqw%3D%3D");
-    background-size:100%;
-    background-repeat:no-repeat;
-    background-position: center;
+#indoorBox,#outdoorBox,#powerlifting{
+    width:250px;
     height:250px;
 }
-.card-3{
-   background-image:url("https://www.surgetonewlevels.net/uploads/2/9/7/3/29731455/122066666-10224427373981284-7519431123691092914-n.jpg");
-   background-size:100%;
-   background-repeat:no-repeat;
-   background-position: center;
-   height:250px;
-
-}
-/*card*/
-
-.card-1-text{
-text-align: center;
-color:#6b6b6b;
-}
-.card-2-text{
+/*cards*/
+.card-1,.card-2,.card-3{
     text-align: center;
     color:#6b6b6b;
+    padding:20px;
+    box-shadow: 0px 4px 4px 4px rgba(218, 223, 225, 0.8);
+    border-radius:10px;
+    width:300px;
+    height:400px;
+    justify-self: center;
 }
-.card-3-text{
-    text-align: center;
-    color:#6b6b6b;
-}
-
-
-
-
-
 /*our team*/
 .team-container{
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top:75px;
 }
 
 #shego, #hego, #mego ,#igo{
@@ -120,7 +94,6 @@ color:#6b6b6b;
     text-align: center;
     color:#6b6b6b;
 }
-
 /*social media icons*/
 #facebook,#google,#twitter,#instagram,#linkedin{
     width:20px;
@@ -129,16 +102,10 @@ color:#6b6b6b;
     border-radius:50%;
     margin-top:20px;
 }
-
-
-
-
-
 /*footer*/
 
 footer{
     background-color:#3b3c36 ;
-      
 }
 .company-social-media{
     grid-area:company-social-media;
@@ -147,8 +114,6 @@ footer{
     justify-content: center;
     margin:20px;
     flex-wrap: wrap;
-    
-    
 }
 address{
     grid-area:address;
@@ -159,7 +124,6 @@ address{
 .phone{
     grid-area:phone;
 }
-
 .contact-container{
     display:flex;
     flex-direction:row;
@@ -167,7 +131,6 @@ address{
     justify-content: space-evenly;
     padding:50px;
     color:#6b6b6b;
-   
 }
 /*media queries*/
 @media (min-width: 320px){
