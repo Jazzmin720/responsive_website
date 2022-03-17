@@ -91,7 +91,7 @@ a:hover{
 /*our team*/
 .our-team{
     width:1000px;
-    height:800px;
+    height:500px;
     margin:auto;
 }
 .team-container{
@@ -104,7 +104,6 @@ a:hover{
 #shego, #hego, #mego ,#igo{
     width:150px;
     height:150px;
-    
 }
 .our-team h2, .our-team p{
     text-align: center;
@@ -120,7 +119,6 @@ a:hover{
     margin-left:20px;
 }
 /*footer*/
-
 footer{
     background-color:#3b3c36 ;
 }
@@ -129,7 +127,7 @@ footer{
     display:flex;
     flex-direction:row;
     justify-content: center;
-    margin:20px;
+    margin-top:200px;
     flex-wrap: wrap;
     padding-left:50px;
 }
@@ -150,6 +148,34 @@ address{
     padding:50px;
     color:#6b6b6b;
 }
+/*sticky footer*/
+.sticky-footer{
+    display:flex;
+    width:100vw;
+    height:200px;
+    position:fixed;
+    bottom:0;
+}
+.footer-container{
+    width:100%;
+    height:9.375rem;
+    background-image:linear-gradient(90deg, cadetblue 0%, skyblue 100%);
+    opacity:0.8;
+    z-index:1000;
+}
+.footer-container h2{
+color:white;
+text-align:center;
+font-weight:600;
+font-size: 1.875rem;
+}
+.footer-container p{
+color:white;
+text-align:center;
+font-size:1.25rem;
+}
+    
+
 /*media queries*/
 @media(max-width:480px){
     .nav-bar ul{
